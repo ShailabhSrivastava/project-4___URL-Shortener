@@ -122,7 +122,7 @@ const getUrl = async function (req, res) {
             return res.status(302).redirect(cachedData.longUrl)
         }
     } catch (err) {
-        return res.status(500).send({ status: false, message: err.message })   
+        return res.status(500).send({ status: false, message: err.message })     
     }
 }
 
